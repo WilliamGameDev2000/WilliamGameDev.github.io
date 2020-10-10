@@ -1,3 +1,8 @@
 
-header {header-color: #7272ab;}
+header
+{
+height: 200px;
+width: auto;
+background-color: #7272ab;
+}
 body {background-color: #f6f7eb;}
