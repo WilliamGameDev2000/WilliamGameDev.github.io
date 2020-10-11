@@ -1,8 +1,28 @@
 
 header
 {
-height: 200px;
+height: 150px;
 width: auto;
 background-color: #7272ab;
 }
 body {background-color: #f6f7eb;}
+
+
+h1
+{
+font-family: 'Oswald', sans-serif;
+font-size: 40px;
+}
+
+n1
+{
+font-family: 'Oswald', sans-serif;
+font-size: 36px;
+color: #FFFFFF;
+}
+
+nav
+{
+	background-color: #191716;
+	padding: 16px;
+}
