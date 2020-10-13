@@ -1,19 +1,27 @@
 
-header
+
+/*fonts*/
+
+a:link
 {
-height: 150px;
-width: auto;
-background-color: #7272ab;
+color: #FFFFFF;
+text-decoration: none;
 }
-body {background-color: #f6f7eb;}
-
-
+a:visited
+{
+color: #FFFFFF;
+text-decoration: none;
+}
+a:hover
+{
+	color: #A9A9A9;
+	text-decoration: none;
+}
 h1
 {
 font-family: 'Oswald', sans-serif;
 font-size: 40px;
 }
-
 n1
 {
 font-family: 'Oswald', sans-serif;
@@ -21,8 +29,32 @@ font-size: 36px;
 color: #FFFFFF;
 }
 
+/*divs*/
+
+header
+{
+height: 125px;
+width: 101.35%;
+background-color: #7272ab;
+}
+body
+{
+background-color: #f6f7eb;
+}
+footer
+{
+height: 75px;
+width: 100%;
+background-color: #7272ab;
+position: fixed;
+bottom: 0px;
+left: 0px;
+}
 nav
 {
-	background-color: #191716;
-	padding: 16px;
+width: 98.99%;
+background-color: #191716;
+padding: 16px;
+left: -10px;
+position: fixed;
 }
