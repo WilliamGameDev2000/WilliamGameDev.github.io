@@ -22,7 +22,13 @@ h1
 font-family: 'Oswald', sans-serif;
 font-size: 40px;
 }
-n1
+#t1
+{
+text-align: center;
+font-family: 'Oswald', sans-serif;
+font-size: 40px;
+}
+#n1
 {
 font-family: 'Oswald', sans-serif;
 font-size: 36px;
@@ -43,7 +49,7 @@ background-color: #f6f7eb;
 }
 footer
 {
-height: 75px;
+height: 55px;
 width: 100%;
 background-color: #7272ab;
 position: fixed;
@@ -57,4 +63,18 @@ background-color: #191716;
 padding: 16px;
 left: -10px;
 position: fixed;
+}
+html{
+  scroll-snap-type: y mandatory;
+}
+section{
+  scroll-snap-align: start;
+}
+img
+{
+display: block;
+margin-left: 65%;
+margin-right: auto;
+width: 35%;
+height:auto;
 }
