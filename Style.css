@@ -39,6 +39,7 @@ color: #FFFFFF;
 
 header
 {
+grid-area: header;
 height: 125px;
 width: 101.35%;
 background-color: #7272ab;
@@ -46,9 +47,16 @@ background-color: #7272ab;
 body
 {
 background-color: #f6f7eb;
+grid-template-columns: repeat(1, 1fr);
+grid-template-areas:
+"header"
+"nav"
+"article"
+"footer"
 }
 footer
 {
+grid-area: footer;
 height: 55px;
 width: 100%;
 background-color: #7272ab;
@@ -58,23 +66,23 @@ left: 0px;
 }
 nav
 {
+grid-area: nav;
 width: 98.99%;
 background-color: #191716;
 padding: 16px;
 left: -10px;
 position: fixed;
 }
-html{
-  scroll-snap-type: y mandatory;
-}
-section{
-  scroll-snap-align: start;
+article
+{
+	grid-area: article;
 }
 img
 {
 display: block;
-margin-left: 65%;
+margin-left: 63%;
 margin-right: auto;
-width: 35%;
+width: 37%;
 height:auto;
+transition: all 0.6s ease;
 }
