@@ -92,3 +92,29 @@ transition delay: 1.5s;
 transition: all 0.6s ease;
 padding: 3px;
 }
+.sidenav {
+  height: 15%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 32%;
+  left: 0;
+  background-color: #191716;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 6px;
+}
+.sidenav a {
+  text-decoration: none;
+  font-size: 29px;
+  color: #FFFFFF;;
+  display: block;
+  transition: 0.5s;
+}
+.sidenav a:hover {
+  color: #A9A9A9;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
