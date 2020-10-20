@@ -31,7 +31,7 @@ font-size: 36px;
 #n1
 {
 font-family: 'Oswald', sans-serif;
-font-size: 32px;
+font-size: 28px;
 color: #FFFFFF;
 }
 
@@ -68,10 +68,10 @@ left: 0px;
 nav
 {
 grid-area: nav;
-width: 100.75%;
+width: 100%;
 background-color: #191716;
 padding: 3px;
-left: -8px;
+left: -10px;
 position: fixed;
 }
 article
