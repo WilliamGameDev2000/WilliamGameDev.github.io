@@ -41,7 +41,7 @@ header
 {
 grid-area: header;
 height: 125px;
-width: 101.35%;
+width: 101%;
 background-color: #7272ab;
 }
 body
@@ -68,7 +68,7 @@ left: 0px;
 nav
 {
 grid-area: nav;
-width: 100.75%;
+width: 100.57%;
 background-color: #191716;
 padding: 3px;
 left: -8px;
