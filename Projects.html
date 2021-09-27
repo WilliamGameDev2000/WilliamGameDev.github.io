@@ -1,62 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="Style.css">
-  <link rel="icon" href="Images\FaviconP.png">
-  <title>WilliamGameDev Projects</title>
-
-  <script>
-function openNav() {
-  document.getElementById("sidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("sidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
+	<link rel="stylesheet" href="Style.css">
+	<link rel="icon" href="Images\FaviconP.png">
 </head>
-<header style="position: relative; top: -27px; left: -10px">
-<h1>WilliamGameDev<br> &nbsp &nbsp &nbsp Portfolio</h1>
+<header style="position: relative; top: -27px; left: -8px">
+	<h1>WilliamGameDev<br> &nbsp &nbsp &nbsp Portfolio</h1>
 </header>
+<div class="grid">
+	<div>
+		<a id="n1" class="links" href="About.html"><div class="hexagon"></div>About Me</a>
+	</div>
+	<div>
+		<a id="n1" class="links" href="index.html"><div class="hexagon"></div>Home</a>
+	</div>
+	<div>
+		<a id="n1" class="links" href="Qualifications.html"><div class="hexagon"></div>Qualifications</a>
 
-<nav style="position: relative; top: -27px;">
-	<p id="n1">
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="index.html">Home</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-		&nbsp <a href="About.html">About</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-		<a href="Qualifications.html">Qualifications</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-		<a href="Projects.html"> Projects and Group Work</a>
-	</p>
-</nav>
-<body>
-
-<div id="sidenav" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<a href="#previous">Previous</a>
-	<a href="#current">Current</a>
-	<a href="#research">Research</a>
+	</div>
 </div>
 
-<span id="main" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-<article>
-<h1>Games and dev!!</h1>
-<p1>Here you can learn about all the projects I've been working on through git
-both in and outside of university</p1>
-<h1 id="previous">Previous Projects</h1>
-<img src="Images\PongTest.gif">
-<img src="Images\GhostPongTest.gif">
-<h1 id="current">Current Projects</h1>
-</article>
-
-
-
-
-<h1 id="research">Research and articles</h1>
-</body>
-
-<footer>
-	<h1 style="position: relative; top: -10px;"> Contact Me</h1>
+<footer style="position: relative; top:0%; left:-8px">
+	<h1> Contact Me</h1>
 </footer>
 </html>
