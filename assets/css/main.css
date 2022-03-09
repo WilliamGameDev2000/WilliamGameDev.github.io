@@ -2563,7 +2563,7 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
+	/*.image {
 		border-radius: 0.25em;
 		border: 0;
 		display: inline-block;
@@ -2613,7 +2613,7 @@ input, select, textarea {
 
 			.image.main img {
 				width: 100%;
-			}
+			}*/
 .gifs {
 	border-radius: 0.25em;
 	border: 0;
@@ -2623,11 +2623,12 @@ input, select, textarea {
 	.gifs img {
 		border-radius: 0.25em;
 		display: block;
+		width: 100%;
 	}
-	.gifs.left, #gifs.right {
+	.gifs.left, .gifs.right {
 	max-width: 40%;
 	}
-	.gifs.left img, #gifs.right img {
+	.gifs.left img, .gifs.right img {
 	width: 100%;
 	}
 	.gifs.left {
