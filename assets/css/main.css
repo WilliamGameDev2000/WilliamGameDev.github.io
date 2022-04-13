@@ -2857,20 +2857,20 @@ input, select, textarea {
 ul.icons {
 	cursor: default;
 	list-style: none;
-	padding-left: 0.5em;
+	padding-left: 7em;
 }
 
 	ul.icons li {
 		display: inline-block;
-		padding: 0 1.25em 0 0;
-		-moz-transform: scale(1.75);
-		-webkit-transform: scale(1.75);
-		-ms-transform: scale(1.75);
-		transform: scale(1.75);
+		padding: 0 7.5em 0 0;
+		-moz-transform: scale(2.25);
+		-webkit-transform: scale(2.25);
+		-ms-transform: scale(2.25);
+		transform: scale(2.25);
 	}
 
 			ul.icons li:last-child {
-				padding-right: 0;
+				padding-right: -1px;
 			}
 
 			ul.icons li > a, ul.icons li > span {
