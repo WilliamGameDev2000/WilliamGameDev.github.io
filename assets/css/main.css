@@ -2584,19 +2584,26 @@ h2.major {
 					color: #953d75;
 				}
 
-/* Image */
+Image
 
-	/*.image {
+.image rounded {
+	border-radius: 25%!important;
+	border-collapse: separate;
+	overflow: hidden;
+	perspective:1px;
+}
+
+.image {
+	border-radius: 0.25em;
+	border: 0;
+	display: inline-block;
+	position: relative;
+}
+
+	.image img {
 		border-radius: 0.25em;
-		border: 0;
-		display: inline-block;
-		position: relative;
+		display: block;
 	}
-
-		.image img {
-			border-radius: 0.25em;
-			display: block;
-		}
 
 		.image.left, .image.right {
 			max-width: 40%;
@@ -2636,55 +2643,8 @@ h2.major {
 
 			.image.main img {
 				width: 100%;
-			}*/
-.gifs {
-	border-radius: 0.25em;
-	border: 0;
-	display: inline-block;
-	position: relative;
-}
-	.gifs img {
-		border-radius: 0.25em;
-		display: block;
-		width: 100%;
-	}
-	.gifs.left, .gifs.right {
-	max-width: 40%;
-	}
-	.gifs.left img, .gifs.right img {
-	width: 100%;
-	}
-	.gifs.left {
-	float: left;
-	margin: 0 1.5em 1em 0;
-	top: 0.25em;
-	}
+			}
 
-	.gifs.right {
-	float: right;
-	margin: 0 0 1em 1.5em;
-	top: 0.25em;
-	}
-
-	.gifs.fit {
-	display: block;
-	margin: 0 0 2em 0;
-	width: 100%;
-	}
-
-	.gifs.fit img {
-		width: 100%;
-	}
-
-	.gifs.main {
-	display: block;
-	margin: 0 0 3em 0;
-	width: 100%;
-	}
-
-		.gifs.main img {
-		width: 100%;
-		}
 
 /* List */
 
