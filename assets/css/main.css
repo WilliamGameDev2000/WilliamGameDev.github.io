@@ -2509,6 +2509,10 @@ h2.major {
 		opacity: 1.0;
 	}
 
+.fa-bounce-hover:not(:hover) {
+	animation: none;
+}
+
 /* Icon */
 
 	.icon {
@@ -2842,16 +2846,17 @@ Image
 ul.icons {
 	cursor: default;
 	list-style: none;
-	padding-left: 7em;
+	padding-left: 6.5em;
 }
 
 	ul.icons li {
 		display: inline-block;
-		padding: 0 7.5em 0 0;
-		-moz-transform: scale(2.25);
-		-webkit-transform: scale(2.25);
-		-ms-transform: scale(2.25);
-		transform: scale(2.25);
+		padding: 0 7em 1.2em 0;
+		margin-left: auto;
+		-moz-transform: scale(2);
+		-webkit-transform: scale(2);
+		-ms-transform: scale(2);
+		transform: scale(2);
 	}
 
 			ul.icons li:last-child {
