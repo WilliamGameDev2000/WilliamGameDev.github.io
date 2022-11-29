@@ -2871,6 +2871,12 @@ ul.icons {
 					display: none;
 				}
 
+.banner{
+	height:400px;
+	background-image: url(../../Images/KojimaBanner.png);
+}
+
+
 /* Menu */
 
 	ul.menu {
