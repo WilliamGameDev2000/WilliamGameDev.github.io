@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-    <title>Game Page</title>
+    <title>Kojima Wars</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -16,9 +16,25 @@
 <body class="is-preload">
 
     <!-- Header -->
-    <header id="header" class="banner">
-        <a href="index.html" class="title"> <b>←</b> Main Page</a>
+    <header id="header">
+        <div id="kojima" class="banner">
+            <a id="header" href="index.html" class="title"> <b>←</b> Main Page</a>
+        </div>
     </header>
+
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="#overview">Game Overview</a></li>
+                    <li><a href="#dev">Development, tools & Structure</a></li>
+                    <li><a href="#us">Our Team</a></li>
+                    <li><a href="#me">My Contributions</a></li>
+                    <li><a href="#footer">Socials</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 
     <!-- Wrapper -->
     <div id="wrapper">
@@ -27,31 +43,75 @@
         <section id="main" class="wrapper">
             <div class="inner">
                 <h1>
-                    Kojima Wars
+                    Kojima Wars -
+                    <br />
+                    A multiplayer tactical FPS
                 </h1>
-                <h2 class="major">
-                   A multiplayer tactical FPS
+                <h2 id="overview" class="major">
+                    Game overview
                 </h2>
                 <p style="font-size: 127%">
+                    The game consists of class based FPS with team based conquest gameplay, much like conquest mode from Star Wars Battlefront,
+                    supported by RTS influenced support gameplay. Bases play a part in scoring points for your team, the more bases the more
+                    points you gain, in order to reach the maximum points or to have the most points before the time limit runs out. Bases that
+                    are captured can also be used to respawn at and have designated positions to place defence turrets.
+                    <br />
+                    <span class="image"><img width="720" src="Images/KojimaBuildTurret.png" alt="Placing turrents around the base" class="preset-file" /></span>
+                    <br />
+                    Bases also have tank factories to spawn in squadrons of AI tank units that can be directed towards bases on an in game map
+                    UI, and they can deal damage to enemy team members and help speed up the base capturing process. These units and turrets have
+                    a cost, however, which is passively earnt from bases under your control.
+                    <br />
+                    <span class="image"><img width="720" src="Images/KojimaTankSupport.png" alt="Manufactoring AI units" class="preset-file" /></span>
+                    <br />
+                    Gameplay was diversified thanks to the combat design team with the implementation of classes for the player to pick from when spawning
+                    in, and any captured base being valid to spawn into from the teams that handled the respawning logic.
+                    <br />
+                    <span class="image"><img width="720" src="Images/KojimaClassPick.png" alt="Picking from classes to spawn in as" class="preset-file" /></span>
+                    <br />
+                    <h2 id="dev" class="major">
+                        Development, tools & structure
+                    </h2>
                     Kojima wars was a cohort project to create a game based on Herzog Zwei set for us as a year group by our lecturers, with
                     the aim of creating a larger game than we would be able to in our smaller groups, and to gain experience with team to
-                    team working. We had several systems handed out to each group that we took responsibility for ranging from setting up ai
+                    team working. We had several systems handed out to each group that we took responsibility for ranging from setting up AI
                     systems, map design, base capturing mechanics, combat systems, networking/lobby, two kinds of movement systems and
                     transformations between those systems, respawn systems, team assignment and player name systems, points and timer systems,
                     modelling and animation teams, audio systems, UI and UX design, and also debug and quality assurance tools.
                     <br />
-                    <span class="image"><img src="Images/PLACEHOLDER.jpg" alt="" class="preset-file" /></span>
+                    The cohort was a task set to every member of the the year group to simulate a studio working environment, using our own
+                    management ideas and methods that we had to work out and deal with any problems that arise. For the project we chose to
+                    work in Unity version 2020.3.26, and we made use of Netcode for GameObjects v1.0.0-pre.5 to handle networking, Unity
+                    Transport Package v1.0.0-pre.5 to help with Unity package communications, and Relay to host the game's network using
+                    the 1.0.0-pre.3 version.
                     <br />
-                    lorem ipsum
+                    <span class="image"><img width="720" src="Images/KojimaContesting.png" alt="Two players contesting one of the bases" class="preset-file" /></span>
                     <br />
                     <br />
-                    <h2 class="major">
+                    <h2 id="us" class="major">
                         Our Team
                     </h2>
-                    In our team we worked on a range of systems, as well as assisting with testing and such for other group's systems. 
+                    In our team we worked on a range of systems, as well as assisting with testing and such for other group's systems.
+                    Initially we worked on setting up movement systems for the FPS part of the game, and worked with the jet movement
+                    team to devise the transformation system. The networking team came and added the RPC calls for server and client to
+                    our code and we began working on other systems as mentioned above. After this point we started to split apart on
+                    individuals from our team worked more with other teams to complete tasks for them rather than as a group like before.
                     <br />
-                    Our trailer: <br/>
+                    <span class="image"><img width="720" src="Images/KojimaFlying.png" alt="Flying in game" class="preset-file" /></span>
+                    <br />
+                    Our trailer: <br />
                     <iframe width="720" height="410" src="https://www.youtube.com/embed/7SgEpB0ZAIs" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <br/>
+                    <h2 id="me" class="major">
+                        My Contributions
+                    </h2>
+                    In particular I worked on console commands in the debug menu, working across the game's network and also contributing
+                    a few models to the game for AI units.
+                    <br />
+                    Command code examples
+                    <br />
+                    <br />
+                    
                 </p>
             </div>
         </section>
