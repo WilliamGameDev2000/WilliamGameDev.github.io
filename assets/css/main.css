@@ -2877,16 +2877,17 @@ ul.icons {
 	background-image: var(--url);
 }
 
-#kojima {
-	width: 100%;
-	--url: url("../../Images/KojimaBanner.png");
-}
-
 #mainbanner {
 	height: 16em;
 	width: 100%;
 	--url: url("../../Images/MainBanner.png");
 }
+
+#kojima {
+	width: 100%;
+	--url: url("../../Images/KojimaBanner.png");
+}
+
 
 
 /* Menu */
