@@ -2872,7 +2872,7 @@ ul.icons {
 				}
 
 .banner {
-	height: 18em;
+	height: 19em;
 	width:100%;
 	background-image: var(--url);
 }
@@ -2886,6 +2886,11 @@ ul.icons {
 #kojima {
 	width: 100%;
 	--url: url("../../Images/KojimaBanner.png");
+}
+
+#squid {
+	width: 100%;
+	--url: url("../../Images/SquidBanner.png");
 }
 
 
@@ -3597,7 +3602,7 @@ ul.icons {
 		overflow-y: auto;
 		position: fixed;
 		text-align: right;
-		top: 18em;
+		top: 19em;
 		width: 18em;
 		z-index: 10000;
 	}

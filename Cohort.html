@@ -18,7 +18,7 @@
     <!-- Header -->
     <header id="header">
         <div id="kojima" class="banner">
-            <a id="header" href="index.html" class="title"> <b>←</b> Main Page</a>
+            <a href="index.html" class="title"> <b>←</b> Main Page</a>
         </div>
     </header>
 
@@ -101,17 +101,52 @@
                     <br />
                     Our trailer: <br />
                     <iframe width="720" height="410" src="https://www.youtube.com/embed/7SgEpB0ZAIs" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <br/>
+                    <br />
                     <h2 id="me" class="major">
                         My Contributions
                     </h2>
                     In particular I worked on console commands in the debug menu, working across the game's network and also contributing
                     a few models to the game for AI units.
                     <br />
-                    Command code examples
+                    Command code examples:
                     <br />
+                    Here are some examples of the commands I implemented for the debug console in game:
+                    The command is set up to take a name delegate that is what the console looks for after a '/' in the string.
+                    There is also a description delegate that works as a tool tip on the /help command which the command console
+                    prints out. The IsHidden boolean is used to determine if the command should appear in the list of commands under
+                    the help command.
                     <br />
-                    
+                    <span class="image"><img width="800" src="Images/CodeGrabKojima4.png" alt="Win Command" class="preset-file" /></span>
+                    <br />
+                    The function underneath is the code that runs once the command is entered into the console, in this case it checks for
+                    if the current scene is equal to the game scene and adds 1000 points to the team assigned to the object that excecuted
+                    the command.
+                    <br />
+                    <span class="image"><img width="800" src="Images/CodeGrabKojima1.png" alt="TP command 1" class="preset-file" /></span>
+                    <span class="image"><img width="800" src="Images/CodeGrabKojima2.png" alt="TP command 2" class="preset-file" /></span>
+                    <br />
+                    This is a teleport command to quickly move between bases, and the movement is syned up with the network and entirely
+                    functional. It was useful for testing other commands that were related to bases such as the instant base capture,
+                    making sure that all the bases were set up to capture properly and such.
+                    <br />
+                    <span class="image"><img width="800" src="Images/CodeGrabKojima3.png" alt="Kill command" class="preset-file" /></span>
+                    <br />
+                    This is the kill self command, mainly used for making sure the respawn player functionality was working properly, and
+                    there is an extended version that looks through all the players and kills them.
+                    <br />
+                    <span class="image"><img width="800" src="Images/CodeGrabKojima5.png" alt="No clip mode command" class="preset-file" /></span>
+                    <span class="image"><img width="800" src="Images/CodeGrabKojima6.png" alt="No clip mode command" class="preset-file" /></span>
+                    <br />
+                    The no clip command uses the player mode enum that determines which control scheme the player will derive from, jet controls or
+                    humanoid/FPS controls, and adds an additional mode that moves around like a player would but also allows for raising and lowering
+                    the player position.
+                    <br />
+                    <span class="image"><img width="800" src="Images/CodeGrabKojima7.png" alt="No clip mode command" class="preset-file" /></span>
+                    <br />
+                    It also temporarily disables all the colliders on the player so that it doesn't get in the way, and this made it really useful
+                    for getting cinematic shots for gameplay trailers etc. The previous movement mode was also temporarily stored for when exitting
+                    out of the no clip mode. This command was also often used in tandem with the hide ui command which temporarily deactivated the
+                    local player's canvas component and hid the weapon too.
                 </p>
             </div>
         </section>
@@ -129,8 +164,7 @@
                     <li><a href="https://github.com/WilliamGameDev2000" target="_blank"><i class="fab fa-github fa-bounce fa-bounce-hover">GitHub</i></a></li>
                     <li><a href="https://www.linkedin.com/in/william-lawrence-3193031bb/" target="_blank"><i class="fab fa-linkedin-in fa-bounce fa-bounce-hover">LinkedIn</i></a></li>
                     <li><a href="https://williamuwe1.itch.io/" target="_blank"><i class="fab fa-itch-io fa-bounce fa-bounce-hover">itchi.io</i></a></li>
-                    <li><a href="https://uwegames.slack.com/team/U02H1PDUW3H" target="_blank"><i class="fab fa-slack fa-bounce fa-bounce-hover">Slack</i></a></li>
-                    <!--<li><a href="" class="icon brands fa-steam"><span class="label">Steam</span></a></li>-->
+                    <!--<li><a href="https://uwegames.slack.com/team/U02H1PDUW3H" target="_blank"><i class="fab fa-slack fa-bounce fa-bounce-hover">Slack</i></a></li>-->
                 </ul>
             </ul>
         </div>
