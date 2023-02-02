@@ -52,31 +52,107 @@
                     <h2 id="engine">
                         Development and Engine Choice
                     </h2>
-                        The Squidstribution demo project was built using Unity Game Engine and the version control was managed with Github to
-                        manage the additional contributions made by all team members. The project has started out as a university submission
-                        project.
-                    
+                    The Squidstribution demo project was built using Unity Game Engine and the version control was managed with Github to manage
+                    the additional contributions made by all team members. The project has started out as a university submission project, and
+                    has since been expanded within the level and the systems present in our submission piece. We made use of some Unity packages
+                    during development including: shader graph for URP shaders, as well as probuilder for prototyping some of the building designs
+                    and destruction effects, and the Low Poly City pack by Synty for some environmental assets and cars. Navigation for the player
+                    and NPC movement was handled through the in-built unity Navmesh, but an additional AI package from Unity's Github page allowed
+                    for NavSurface definitions and for more control over definitions for agent type behaviours on certain areas. For our scripts
+                    we also used the IDamagable interface to make applying damage much easier to objects that extend this behaviour.
                     <br />
-                    <span class="image"><img src="Images/SquidGameShot.png" alt="" class="preset-file" /></span>
+                    <br />
+                    The Models and associated rubble pieces on custom buildings all were made in Blender, with use from the cell fracture effect,
+                    and separated into prefabs in Unity that are swapped out for each other when the buildings are destroyed. This combined with
+                    physics affecting the pieces meant that the destruction was varied each time the buildings were destroyed, to help keep game
+                    visuals fresher and more engaging.
+                    <br />
+                    <span class="image"><img src="Images/SquidGameShot3.png" alt="camera swap" class="preset-file" /></span>
+                    <br />
+                    We also used tricks such as swapping between cameras with different UI elements and fiters to try and create different feelings
+                    based on certain events that happen in game, for instance the above picture shows how certain points in the game will transition
+                    to a news camera to help sell that this is a giant monster and create the desired atmosphere when playing the game. The increase
+                    distance also helps to make him feel more dangerous. The ticker text running along the news report also pulls from a set of
+                    text lines which can help add some variety to the visuals when experiencing this change in camera.
                     <br />
                     <h2 id="overview">
                         Game Overview
                     </h2>
                     The game sees you controlling the kaiju squid washed up on land in squid city, and from there you must contol him in order
                     to restore the feng shui to restore the karma in the city. These karma points can be spent to create minions in your quest
-                    to destroy all the bad buildings and to use special moves for massive damage!
+                    to destroy all the bad buildings and to use special moves for massive damage! The more and more karma you build up the larger
+                    and more powerful you grow, but the bigger your threat level becomes the more enemies will come for you.
+                    <br />
+                    <span class="image"><img src="Images/SquidGameShot2.png" width="720" alt="size comparison" class="preset-file" /></span>
+                    <br />
+                    Enemies chase you down from military bases for as long as they stand, and wherever you go! While the enemies are still alive
+                    they will navigate to find you anywhere in the city, and they will even try to find you across the water if they can fly. It's
+                    a good idea to destroy their bases first to try and stop them spawning, as the more you progress the more difficult it will be
+                    to take them on in order to help create a level curve.
+                    <br />
+                    <span class="image"><img src="Images/SquidGameShot.png" width="720" alt="base desrtroyed" class="preset-file" /></span>
+                    <br />
+
+                    <br />
+                    <br />
+                    (Further feedback on the project found on my itch.io page is always appreciated, and helps improve the game and all its systems
+                    a lot!)
                     <br />
                     <br />
                     <h2 id="us">
-                        Our Team
+                        The Team
                     </h2>
-                    As a group we all believe the demo is a solid proof of concept that can be worked on, and that the game has an idea of
-                    how we can progress with the idea.
+                    As a group we all believe the demo is a solid proof of concept that can be worked on, and that the game has a clear
+                    vision of how we can progress. We designed the game to the brief, that came from a random idea generated from a seed,
+                    of a god game where you distribute squids however we didn't limit ourselves to considering other aspects of the game
+                    such as the destruction aspects. As a group we also had to consider the motiviations players have when going into a
+                    game as part of the assignment, which led to the creation of a custom achievment even system for completing certain
+                    actions during the gameplay.
+                    <br />
 
                     <h2 id="me">
                         My Contributions
                     </h2>
+
+                    In particular I worked on a variety of the game sysetms, the game design, and the art-side of the project. The score calculation
+                    system when destroying buildings and killing enemies was done by me and then expanded with our custom event system.
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid1.png" width="720" alt="scoring calculations" class="preset-file" /></span>
+                    <br />
+                    The building destruction code was done by me and another team mate with further additions such as special composite building types
+                    and buildings that can't be destroyed until certain conditions are met etc were added by me. Below is the standard destruction script
+                    for buildings:
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid12.png" width="720" alt="damage buildings" class="preset-file" /></span>
+                    <br />
+                    Applies damage to this object.
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid13.png" width="900" alt="call on deactivation" class="preset-file" /></span>
+                    <br />
+                    Gets the correct prefab for the rubble pieces, adds physics to them, and calls on the deactivation of the pieces on a timer.
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid14.png" width="720" alt="deactivation event" class="preset-file" /></span>
+                    <br />
+                    It then alerts the event manager upon deactivation.
+                    <br />
+                    <br />
+                    I also worked on the player input and movement systems, and improved
+                    the special attack systems to be event based. The unit control system was implemented by me as well, as well as updating parts
+                    of the UI and the associated code and I worked on some simple environemntal scripts to help with balancing and making the city
+                    itself more interactive. I worked on creating and upgrading the visuals of the game since the submission date as well, teaching
+                    myself about shaders in unity and controlling variables on the shader through code as well which I set up this dissolve shader
+                    to remove game objects from the scene smoothly.
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid11.png" width="720" alt="shader graph dissolve" class="preset-file" /></span>
+                    <br />
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid8.png" width="720" alt="dissolve implementation" class="preset-file" /></span>
+                    <br />
                 </p>
+                <br />
+                <h2 class="major">
+                    Please check out the game on itch.io!
+                </h2>
                 <ul class="actions">
                     <li><a href="https://williamgamedev.itch.io/squidstribution-prototype" class="button">To Itch <b>→</b></a></li>
                 </ul>

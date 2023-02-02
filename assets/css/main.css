@@ -2880,17 +2880,17 @@ ul.icons {
 #mainbanner {
 	height: 16em;
 	width: 100%;
-	--url: url("../../Images/MainBanner.png");
+	--url: url("../../Images/Banners/MainBanner.png");
 }
 
 #kojima {
 	width: 100%;
-	--url: url("../../Images/KojimaBanner.png");
+	--url: url("../../Images/Banners/KojimaBanner.png");
 }
 
 #squid {
 	width: 100%;
-	--url: url("../../Images/SquidBanner.png");
+	--url: url("../../Images/Banners/SquidBanner.png");
 }
 
 
@@ -3077,7 +3077,7 @@ ul.icons {
 			border-radius: 0;
 			display: block;
 			position: relative;
-			width: 50em;
+			width: 60em;
 		}
 
 			.spotlights > section > .image img {
@@ -3115,7 +3115,7 @@ ul.icons {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 25em;
+			width: 30em;
 			-ms-flex: 1;
 		}
 
