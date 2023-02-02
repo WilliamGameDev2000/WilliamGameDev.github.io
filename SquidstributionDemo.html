@@ -65,7 +65,7 @@
                     The Models and associated rubble pieces on custom buildings all were made in Blender, with use from the cell fracture effect,
                     and separated into prefabs in Unity that are swapped out for each other when the buildings are destroyed. This combined with
                     physics affecting the pieces meant that the destruction was varied each time the buildings were destroyed, to help keep game
-                    visuals fresher and more engaging.
+                    visuals fresher and more engaging. We also installed Cinemachine to smooth camera transitions and work on cutscenes.
                     <br />
                     <span class="image"><img src="Images/SquidGameShot3.png" alt="camera swap" class="preset-file" /></span>
                     <br />
@@ -136,18 +136,59 @@
                     It then alerts the event manager upon deactivation.
                     <br />
                     <br />
-                    I also worked on the player input and movement systems, and improved
-                    the special attack systems to be event based. The unit control system was implemented by me as well, as well as updating parts
-                    of the UI and the associated code and I worked on some simple environemntal scripts to help with balancing and making the city
-                    itself more interactive. I worked on creating and upgrading the visuals of the game since the submission date as well, teaching
-                    myself about shaders in unity and controlling variables on the shader through code as well which I set up this dissolve shader
-                    to remove game objects from the scene smoothly.
+                    I also worked on the player input and movement systems that make use of the navmesh objects and moves the player towards the point,
+                    clicked based on the screen position. The system works as the certain places are marked as ground using layers and so additional
+                    input functionality such as the unit selection can be achieved using additional layers which also have modified conditions to add
+                    more functionality to mouse input. The logic for the unit control and their input system was also implemented by me.
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid9.png" width="720" alt="Select script 1" class="preset-file" /></span>
+                    <br />
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid10.png" width="720" alt="Select script 2" class="preset-file" /></span>
+                    <br />
+                    <br />
+                    Additional player input logic for the special abilities that deal extra damage and make us of the karma point system was added and
+                    then further optimised and improved by me. The special attack systems was changed to be event based, and uses a inheritance Object
+                    Orientated Programming principle to derive different abilities as child classes, which helps it to be expandable. As each ability
+                    is a component on the player as well this should in theory make setting up a system for swapping abilities modular out in a load
+                    out fairly feasible and is something I hope to do in the future.
+                    <br />
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid2.png" width="720" alt="ability trigger code" class="preset-file" /></span>
+                    <br />
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid3.png" width="720" alt="ability logic code 1" class="preset-file" /></span>
+                    <br />
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid4.png" width="720" alt="ability logic code 2" class="preset-file" /></span>
+                    <br />
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid5.png" width="720" alt="ability logic code 3" class="preset-file" /></span>
+                    <br />
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid7.png" width="720" alt="ability logic code 4" class="preset-file" /></span>
+                    <br />
+                    I made some updates to the UI, such as adding in several more bars to communicate information to the player quickly such and also
+                    creating the sprite work for them, as well as writing a bar fill script which manages how much to fill each bar.
+                    <br />
+                    Furhter more I worked on some simple environemntal scripts to help with balancing and making the city itself more interactive, such
+                    as the healing script that attaches to floor pieces in water sections. There is also a desctruction script which allows parts of the
+                    city that aren't buildings to also be destroyed, with out the need for the additional component dependacies that buildings need.
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabSquid7.png" width="720" alt="ability logic code 4" class="preset-file" /></span>
+                    <br />
+                    I worked on creating the visuals and upgrading them since the submission date as well, teaching myself about shaders in unity and
+                    controlling variables on the shader through code as well which I set up this dissolve shader to remove game objects from the scene
+                    smoothly.
                     <br />
                     <span class="image"><img src="Images/Code/CodeGrabSquid11.png" width="720" alt="shader graph dissolve" class="preset-file" /></span>
                     <br />
                     <br />
                     <span class="image"><img src="Images/Code/CodeGrabSquid8.png" width="720" alt="dissolve implementation" class="preset-file" /></span>
                     <br />
+                    There is also the newest designs that I have been working on, for the boss encounter ending the level by working on both the modelling
+                    and materials, and the game design documentation for the boss and how it should be implemented. I also worked on setting up cutscenes
+                    within the game through cinemachine.
                 </p>
                 <br />
                 <h2 class="major">
