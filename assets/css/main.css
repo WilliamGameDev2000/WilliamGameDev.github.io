@@ -2893,6 +2893,11 @@ ul.icons {
 	--url: url("../../Images/Banners/SquidBanner.png");
 }
 
+#dicebanner {
+	width: 100%;
+	--url: url("../../Images/Banners/DiceBanner.png");
+}
+
 
 
 /* Menu */
