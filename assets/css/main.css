@@ -2898,6 +2898,20 @@ ul.icons {
 	--url: url("../../Images/Banners/DiceBanner.png");
 }
 
+#rpgbanner {
+	width: 100%;
+	--url: url("../../Images/Banners/Banner.png");
+}
+
+
+.filterDiv{
+	display: none;
+}
+
+.show{
+	display:block;
+}
+
 
 
 /* Menu */

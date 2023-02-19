@@ -26,6 +26,7 @@
 			<nav>
 				<ul>
 					<li><a href="#intro">Intro</a></li>
+					<li><a href="#about">About</a></li>
 					<li><a href="#one">Projects</a></li>
 					<li><a href="#two">Skills List</a></li>
 					<li><a href="#footer">Socials</a></li>
@@ -41,11 +42,11 @@
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<aside class="inner">
 				<h1><u>WilliamGameDev</u></h1>
-				<p>Hi. I'm William Lawrence </br> <b>Welcome to my game dev portfolio</b></p>
+				<p>Hi. I'm William Lawrence - A gameplay problem solver </br> <b>Welcome to my game dev portfolio</b></p>
 				<br />
 				<!--<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-				and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>-->
-				
+			and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>-->
+
 				<p style="font-size: 50%">The site is being updated constantly with more details on projects and new projects coming up as well</p>
 				<br />
 
@@ -56,12 +57,25 @@
 
 		</section>
 
+		<section id="about" class="wrapper style1 fullscreen fade-up">
+			<h1>What I bring to the table</h1>
+			<p>
+
+			</p>
+		</section>
+
 		<!-- One -->
 		<section id="one" class="wrapper style2 spotlights">
+			<!--<div id="myBtnContainer">
+		<button class="btn activeBtn" onclick="filterSelection('all')">Show All</button>
+		<button class="btn" onclick="filterSelection('Unity')">Unity Engine</button>
+		<button class="btn" onclick="filterSelection('Unreal')">Unreal Engine</button>
+	</div>-->
+
 			<h2 class="major">Completed Projects</h2>
 			<section>
 				<aside class="image"><img src="Images/SquidGameShotCover.png" alt="" class="preset-file" /></aside>
-				<div class="content">
+				<div class="content filterDiv Unity">
 					<div class="inner">
 						<h2>Squidstribution Demo</h2>
 						<p>This demo game is all about controlling a kaiju sized squid to destroy a city with high above point and click game play in order to balance out the feng shui to gain karma.</p>
@@ -71,6 +85,22 @@
 						</ul>
 					</div>
 				</div>
+			</section>
+			<br />
+			<br />
+			<section>
+				<div class="content filterDiv Unreal">
+					<div class="inner">
+						<h2>A hyper casual runner game</h2>
+						<p>The project was made for the Mastered Bootcamp creator challenge day, themed around making a hyper casual game. I decided to go with a runner game and to work in C++ primarily
+						rather then relying on blueprints.</p>
+						<ul class="actions">
+							<li><a href="RunnerUnreal.html" class="button">To Page <b>→</b></a></li>
+							<li><a href="https://williamgamedev.itch.io/runnergame" class="button">To Itch <b>→</b></a></li>
+						</ul>
+					</div>
+				</div>
+				<aside class="image"><img src="Images/Runner.png" alt="" class="preset-file" /></aside>
 			</section>
 			<br />
 			<br />
@@ -107,7 +137,7 @@
 			<br />
 			<br />
 			<section>
-				<div class="content">
+				<div class="content filterDiv Unity">
 					<div class="inner">
 						<h2>GameJam Roll of a dice game</h2>
 						<p></p>
@@ -163,7 +193,7 @@
 				<aside class="image">
 					<img src="Images/KojimaLogo.png" alt="" class="preset-file" />
 				</aside>
-				<div class="content">
+				<div class="content filterDiv Unity">
 					<div class="inner">
 						<h2>Kojima Wars</h2>
 						<p>
@@ -179,7 +209,7 @@
 			<br />
 			<br />
 			<section>
-				<div class="content">
+				<div class="content filterDiv Unity">
 					<div class="inner">
 						<h2>Binding of Issac De-make</h2>
 						<p>
@@ -202,7 +232,7 @@
 				<aside class="image">
 					<img src="Images/OpenWorldpic.png" alt="" class="preset-file" />
 				</aside>
-				<div class="content">
+				<div class="content filterDiv Unity">
 					<div class="inner">
 						<h2>World Streaming</h2>
 						<p>
@@ -217,15 +247,14 @@
 			<br />
 			<br />
 			<section>
-				<div class="content">
+				<div class="content filterDiv Unreal">
 					<div class="inner">
-						<h2>Old Skool FPS</h2>
+						<h2>RPG Arena</h2>
 						<p>
-							Recreating a retro style shooter game in Direct X 11 in the same vein as games such as Doom and Wolfenstein.
-							The project will be coming soon.
+							An RPG game set in an arena, made in Unreal Engine 4.27
 						</p>
 						<ul class="actions">
-							<li><a href="OldSkool.html" class="button">To Page <b>→</b></a></li>
+							<li><a href="RPGArena.html" class="button">To Page <b>→</b></a></li>
 						</ul>
 					</div>
 				</div>
@@ -235,6 +264,25 @@
 			</section>
 			<br />
 			<br />
+			<!--<section>
+		<div class="content filterDiv DX">
+			<div class="inner">
+				<h2>Old Skool FPS</h2>
+				<p>
+					Recreating a retro style shooter game in Direct X 11 in the same vein as games such as Doom and Wolfenstein.
+					The project will be coming soon.
+				</p>
+				<ul class="actions">
+					<li><a href="OldSkool.html" class="button">To Page <b>→</b></a></li>
+				</ul>
+			</div>
+		</div>
+		<aside class="image">
+			<img src="Images/PLACEHOLDER.jpg" alt="" class="preset-file" />
+		</aside>
+	</section>
+	<br />
+	<br />-->
 			<h2 class="major"></h2>
 
 			<section class="wrapper">
@@ -342,6 +390,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/filterbutton.js"></script>
 
 </body>
 </html>
