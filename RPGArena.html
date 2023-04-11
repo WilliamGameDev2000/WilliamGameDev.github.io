@@ -90,8 +90,8 @@
                     easier than modelling them from scratch while also feeding into the charcter creator section
                     of the game. I also used it to create items/equipment and the obstacles in the world that the
                     player can interact with and stand on.
-
-
+                    <br />
+                    The game also is constructed on a mixture of both Blueprints and C++ code,
                     <br />
                     <br />
                     <h2 id="mech">
@@ -102,10 +102,28 @@
                     <h2 id="code">
                         Code
                     </h2>
-                    A behaviour tree that controls whether the enemies are in their patrolling state or their target
-                    states, and to attack once in range. 
+                    A behaviour tree that controls which states the enemy AI are in, their patrolling state or
+                    their target states, and to attack once in range:
                     <br />
                     <span class="image"><img src="Images/Code/RPGArenaCode1.png" alt="" class="preset-file" /></span>
+                    <br />
+                    Damange calculations based on the factors such as weapon used, the skills of the character
+                    using it, the armour equipped on the target which can dynamically change through other systems
+                    that the player engages with:
+                    <br />
+                    <span class="image"><img src="Images/Code/RPGArenaCode2.png" alt="" class="preset-file" /></span>
+                    <br />
+                    These systems include the level up system which updates the player's stats when enough XP has
+                    been accumulated, the modular armour and weapon equipment system which changes what and how many
+                    pieces of armour and weapons the player has currently equipped. <br />
+                    In addition there is a minimal damage check to prevent erronious calculations from making it through
+                    to the damage applied.
+                    <br />
+                    <br />
+                    I used C++ to handle the stat calculation systems, in a completely class independant method which
+                    allows for it to be made applicable to enemies and allies in addition to the player.
+                    <br />
+                    <span class="image"><img src="Images/Code/RPGArenaCode3.png" alt="" class="preset-file" /></span>
                     <br />
                 </p>
             </div>
