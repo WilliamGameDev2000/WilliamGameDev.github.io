@@ -21,7 +21,7 @@
     </header>
 
     <header id="header">
-        <div id="mainbanner" class="banner"></div>
+        <div id="runnerbanner" class="banner"></div>
     </header>
 
     <!-- Sidebar -->
@@ -29,10 +29,10 @@
         <div class="inner">
             <nav>
                 <ul>
-                    <!--<li><a href="#intro">Intro</a></li>
-                    <li><a href="#one">Projects</a></li>
-                    <li><a href="#two">Skills List</a></li>
-                    <li><a href="#footer">Socials</a></li>-->
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#eng">Engine</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#footer">Socials</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,7 +47,7 @@
                 <h1>
                     A hyper casual game
                 </h1>
-                <h2 class="major">
+                <h2 class="major" id="intro">
                     Made in 1 day
                 </h2>
                 <p style="font-size: 127%">
@@ -57,7 +57,24 @@
                     and some environmental objects. Some tweaks to the trampoline object and texturing and the
                     particles were added later as well, and completing the most fundamental game loop for the game.
                     <br />
-                    <span class="image"><img src="Images/PLACEHOLDER.jpg" alt="" class="preset-file" /></span>
+                    <h2 id="eng">Engine</h2>
+                    <br />
+                    <br />
+                    The Engine used was Unreal v4.27, and the project was set up making use of C++ code and blueprints.
+                    The character derived from Unreal's in-built character class setting the properties for movement as
+                    well as level reset and collisions. A base class for levels was also created in C++, with functions
+                    for binding two triggers that could be called from blueprints. These triggers were bound to two box
+                    components to represent spawn and player detection locations in the blueprint which could then be
+                    shared with children objects to create a variety of levels to spawn in from an array.
+                    <br />
+                    <br />
+                    A level spawner and obstacles were created in C++ deriving from Unreal's Actor class as to be placed
+                    into the world. 
+                    <br />
+                    <br />
+                    <h2 id="code">Code</h2>
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabRunner1.png" alt="" class="preset-file" /></span>
                     <br />
                     <a href="https://williamgamedev.itch.io/runnergame" class="button">To Itch <b>→</b></a>
                 </p>

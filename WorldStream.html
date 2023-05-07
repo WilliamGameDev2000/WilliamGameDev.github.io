@@ -17,9 +17,23 @@
 
     <!-- Header -->
     <header id="header">
-        <a href="index.html" class="title"> <b>←</b> Main Page</a>
-        <nav></nav>
+        <div id="streambanner" class="banner">
+            <a href="index.html" class="title"> <b>←</b> Main Page</a>
+        </div>
     </header>
+
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="#chunk">Chunks</a></li>
+                    <li><a href="#dev">Development and tools</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#footer">Socials</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 
     <!-- Wrapper -->
     <div id="wrapper">
@@ -30,23 +44,35 @@
                 <h1>
                     World streaming & chunk system
                 </h1>
-                <h2 class="major">
+                <h2 id="chunk" class="major">
                     A technical challenge to create a chunk loading system for open world games from scratch
                 </h2>
                 <p style="font-size: 127%">
                     The goal was to create a system that would support loading terrain straight off the disk and to
                     load the relevant systems within that chunk with it without losing any data. My approach was to
                     store object files in the game files and to stream those files into a deserialiser. The appropriate
-                    data for each chunk would also be loaded in through Unity's scriptable objects to prevent losing the data.
+                    data for each chunk would also be loaded in through Unity's scriptable objects to prevent losing the data,
+                    and to make up these 'chunks'. 
                     <br />
                     <span class="image"><img src="Images/OpenWorldpic.png" alt="" class="preset-file" /></span>
                     <br />
-                    lorem ipsum
+                    <h2 id="dev" class="major">
+                        The system development and tools
+                    </h2>
+                    I used Unity Engine to create the world streaming system, with a chunk loader and radius loading system that
+                    uses terrain vertex data saved in an .OBJ file format.
                     <br />
+                    <span id="code" class="image"><img src="Images/Code/CodeGrabWorld1.png" alt="" class="preset-file" /></span>
+                    <br />
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabWorld2.png" alt="" class="preset-file" /></span>
+                    <br />
+                    <br />
+                    <br />
+                    You'll need the password to view this page as it's currenlty not in a game/demo state nor will it likely be in the near future.
+                    The password for the page is: GameDevWill
                     <br />
                     <a href="https://williamgamedev.itch.io/open-world-stream-demo">View Downloadable for tech demo here on my Itch.io page!</a>
-                    <p>You'll need the password to view this page as it's currenlty not in a game/demo state nor will it likely be in the near future.<br />
-                The password for the page is: GameDevWill</p>
                 </p>
             </div>
         </section>
