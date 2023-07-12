@@ -55,12 +55,18 @@
                     mouse inputs, graphics rendering pipelines, player movement, collision detection, creating
                     a core game loop.
                     <br />
-                    The window and graphics rendering pipeline were created for the game making use of Direct X's
-                    data structs for buffer and resources to store data appropriate to the swap chain. This meant
-                    that I can define a viewport to and depth stencil for the window. 
+                    The graphics rendering pipeline was created for the game making use of Direct X's data structs
+                    for buffer and resources to store data appropriate to the swap chain. This meant that I can
+                    define a viewport and depth stencil for the window.<br />
+                    The Window was created through the a custom window class created through Microsoft Create
+                    window function, passing in window name and height. Then came defining Message handlers
+                    for different input types. 
+                    <br />
                     <br />
                     I created a pixel and vertex shader for handling the colour values of the pixels and for
-                    defining verticies on rendered objects.
+                    defining verticies on rendered objects. A index buffer allowed for more optimised draw calls
+                    as index vertices would be taken into account to avoid drawing them twice for neighbouring
+                    triangles.
                     <br />
                     <br />
                     <h2 id="Game">
@@ -70,7 +76,8 @@
                     The game is a classic FPS style recreation, with shooting and movement functionailty, it has
                     billboarded enemy sprites and simple collision detection. It places the player in a simple
                     environment that can be loaded and created through text files, which could be expanded into
-                    a level editor system. 
+                    a level editor system. The system reads through text files and when it reads specific
+                    characters it will place specified objects in place.
                     <br/>
                     <br/>
                     <span class="image"><img src="Images/PLACEHOLDER.jpg" alt="" class="preset-file" /></span>
