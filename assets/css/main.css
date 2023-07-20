@@ -2917,6 +2917,10 @@ ul.icons {
 	width: 100%;
 	--url: url("../../Images/Banners/IssacBanner.png");
 }
+#OSbanner {
+	width: 100%;
+	--url: url("../../Images/Banners/OldSkoolBanner.png");
+}
 
 .filterDiv{
 	display: none;
