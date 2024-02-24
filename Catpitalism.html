@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <!--
     Hyperspace by HTML5 UP
     html5up.net | @ajlkn
@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-    <title>Game Page</title>
+    <title>Catpitalism Game Page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -17,7 +17,7 @@
 
     <!-- Header -->
     <header id="header">
-        <div id="streambanner" class="banner">
+        <div id="" class="banner">
             <a href="index.html" class="title"> <b>←</b> Main Page</a>
         </div>
     </header>
@@ -26,8 +26,9 @@
         <div class="inner">
             <nav>
                 <ul>
-                    <li><a href="#chunk">Chunks</a></li>
-                    <li><a href="#dev">Development and tools</a></li>
+                    <li><a href="#Game">The Game</a></li>
+                    <li><a href="#Dev">Development cycle</a></li>
+                    <li><a href="#Mech">Mechanics</a></li>
                     <li><a href="#code">Code</a></li>
                     <li><a href="#footer">Socials</a></li>
                 </ul>
@@ -42,37 +43,48 @@
         <section id="main" class="wrapper">
             <div class="inner">
                 <h1>
-                    World streaming & chunk system
+                    Catpitalism is a small-scale project made in Godot 4.1 for <a href="https://globalgamejam.org/games/2024/catpitalism-2" target="_blank">Global Game Jam 2024</a>
                 </h1>
-                <h2 id="chunk" class="major">
-                    A technical challenge to create a chunk loading system for open world games from scratch
+                <h2 class="major" id="Game">
+                    The Game
                 </h2>
                 <p style="font-size: 127%">
-                    The goal was to create a system that would support loading terrain straight off the disk and to
-                    load the relevant systems within that chunk with it without losing any data. My approach was to
-                    store object files in the game files and to stream those files into a deserialiser. The appropriate
-                    data for each chunk would also be loaded in through Unity's scriptable objects to prevent losing the data,
-                    and to make up these 'chunks'.
                     <br />
-                    <span class="image"><img src="Images/OpenWorldpic.png" alt="" class="preset-file" /></span>
+                    Catpitalism is a story about David the cat trying to climb his way up the corporate
+                    ladder in an oppressive office full of...Mice! Fight your way through office floors,
+                    break rooms, and more (coming later) while taking on your managers and bosses until
+                    you reach the top.
                     <br />
-                    <h2 id="dev" class="major">
-                        The system development and tools
-                    </h2>
-                    I used Unity Engine to create the world streaming system, with a chunk loader and radius loading system that
-                    uses terrain vertex data saved in an .OBJ file format.
+                    <span class="image"><img src="Images/david title screen-01.png" alt="" class="preset-file" width="150%" /></span>
                     <br />
-                    <span id="code" class="image"><img src="Images/Code/CodeGrabWorld1.png" alt="" class="preset-file" /></span>
+                    There are a few weapons to chose from including environmental objects that can be
+                    picked up and thrown at enemies and bosses. There is currently a basic enemy type
+                    that closes in on the player (a bit like how the VampireSurvivors gameplay loop
+                    is), as well as a boss unit that has special attack patterns and projectiles.
                     <br />
                     <br />
-                    <span class="image"><img src="Images/Code/CodeGrabWorld2.png" alt="" class="preset-file" /></span>
+                    After the submission I have also been tweaking and updating features (such as 
+                    adding in the throwable objects) as well as polishing features to account for
+                    edgecasing and making systems more generic to help in further development.
                     <br />
                     <br />
+                    <h2 id="Dev">Development</h2>
                     <br />
-                    You'll need the password to view this page as it's currenlty not in a game/demo state nor will it likely be in the near future.
-                    The password for the page is: GameDevWill
+                    The game was made in Godot, using the in-built GDScript language which has several
+                    commonalities with Python such as forced indentation. It was a first time using
+                    GDScript for me however I was able to work it out and contribute key aspects such
+                    as the player movement system and help others with their systems as well.
                     <br />
-                    <a href="https://williamgamedev.itch.io/open-world-stream-demo">View Downloadable for tech demo here on my Itch.io page!</a>
+                    I also helped out by taking advantage of some of Godot's in-built functionality
+                    to help other team members with their development like finding the way to add
+                    collision to the tile-maps intrinsically for the level designers. I also helped
+                    in debugging and troubleshooting systems during their development and after
+                    merge conflicts with the Git repo.
+                    <br />
+                    <br />
+                    <h2 id="Mech">Mechanics</h2>
+
+                    <h2 id="code">Code & examples</h2>
                 </p>
             </div>
         </section>
