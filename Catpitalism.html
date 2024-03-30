@@ -69,18 +69,21 @@
                     to help in further development.
                     <br />
                     <br />
-                    <h2 id="Dev">Development</h2>
+                    <h2 id="Dev">Development & Engine</h2>
                     <br />
                     The game was made in Godot, using the in-built GDScript language which has several
                     commonalities with Python such as forced indentation. It was a first time using
                     GDScript for me however I was able to work it out and contribute key aspects such
-                    as the player movement system and help others with their systems as well.
+                    as the player movement system and help others with their systems as well. It was
+                    not, however, my first time using the Godot engine and it's interface and I was
+                    confident in navigation the engine and it's features and utilising them.
                     <br />
                     I also helped out by taking advantage of some of Godot's in-built functionality
                     to help other team members with their development like finding the way to add
-                    collision to the tile-maps intrinsically for the level designers. I also helped
-                    in debugging and troubleshooting systems during their development and after
-                    merge conflicts with the Git repo.
+                    collision to the tile-maps themselves for the level designers without needing to
+                    create a collision around the whole level piece by piece. I also helped out in
+                    debugging and troubleshooting systems during their development and after merge
+                    conflicts with the Git repo.
                     <br />
                     <br />
                     <h2 id="Mech">Mechanics</h2>
@@ -97,15 +100,36 @@
                     light blue colour to indicate they can be held. This puts the player in
                     an altered state where they slow down their movement speed and have to
                     throw the object again before being able to fire their weapon again.
+                    Also interacts with certain environmental features such as containers
+                    that drop healing items before going on a short cool down.
 
                     - Weapon swapping can be done at any weapon pick-up (Currently a place
                     holder orb sprite) and will automatically change the player's weapon
                     to the corrosponding weapon on the pick up object. Weapons can be
                     set up with unique attributes such as their projectile's damage
                     values, how much durability they have etc.
-                    <h2 id="code">Code & examples</h2>
 
-                    <span class="image"><img src="Images/david title screen-01.png" alt="" class="preset-file" width="150%" /></span>
+                    - Healing fills up your current health bar if you're not at max for
+                    the current life. The player has nine lives that they can take three
+                    points of damage on each before not being able to heal to the next life
+                    up again. Healing is done by picking up David's favourite food item - a
+                    sandwich.
+                    <h2 id="code">Code & examples</h2>
+                    Code grabs of the player script I created <br />
+                    [
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabDavid1.png" alt="" class="preset-file"/></span>
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabDavid2.png" alt="" class="preset-file"/></span>
+                    <br />
+                    <span class="image"><img src="Images/Code/CodeGrabDavid3.png" alt="" class="preset-file"/></span>
+                    <br />
+                    ] <br />
+                    The code is a simple responsive movement system making use of Godot's 2D Vector
+                    features, with a fairly simple dash mechanic with a few i-frames for collisions
+                    and a reference to a point on the player object that checks for and holds throwable
+                    weapons. This weapon and if it's filled is checked and the weight valuable is taken
+                    into consideration for the movement speed as well.
                 </p>
             </div>
         </section>
